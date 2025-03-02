@@ -1,27 +1,27 @@
 ﻿using AmongUsUnknownImpostors.Patches;
+using AmongUsUnknownImpostors.Reactor;
 using BepInEx;
-using BepInEx.Configuration;
-using BepInEx.IL2CPP;
+using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
-using Reactor;
 
 namespace AmongUsUnknownImpostors
 {
-    [BepInPlugin(Id)]
+    [BepInPlugin(Id, "AmongUsUnknownImpostors", VersionString)]
     [BepInProcess("Among Us.exe")]
-    [BepInDependency(ReactorPlugin.Id)]
-    [BepInDependency("com.herysia.LobbyOptionsAPI")]
+
     public class UnknownImpostorsPlugin : BasePlugin
     {
-        public const string Id = "com.herysia.amongusunkimpostor";
-        public static byte rpcSettingsId = 70;
+        public const string Id = "com.fangkuai.amongusunkimpostor";
+        public const string VersionString = "2.0.0";
 
         public Harmony Harmony { get; } = new Harmony(Id);
 
         public override void Load()
         {
-            CustomGameOptionsData.customGameOptions = new CustomGameOptionsData();
+            Language.Load();
+            CustomGameOptionsData.LoadAll();
             Harmony.PatchAll();
+            AddComponent<Coroutines.Component>();
         }
     }
 }

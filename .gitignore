@@ -3,4 +3,5 @@
 ################################################################################
 
 /.vs
-/obj
+/AmongUsUnknownImpostors/bin/Debug/net6.0
+/AmongUsUnknownImpostors/obj

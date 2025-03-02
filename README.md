@@ -2,6 +2,22 @@
 
 Among us mod that fixes some game breaking bugs when tryharding among us. As well as some useful settings
 
+## Langauges
+
+### Add private language
+
+- Create a folder named 'Language' in the game directory
+- Download [Lang.dat](./AmongUsUnknownImpostors/Language/Lang.dat)
+- Open 'Lang. dat' using Notepad and translate it
+- Change the name of 'Lang. dat' to the corresponding language name
+
+### Add public language
+
+- Copy 'Lang. dat' from 'AmongUsUnknown Anchors/Language'
+- Open 'Lang. dat' in Notepad for translation
+- Change it to the corresponding language name and store it in 'AmongUsUnknown Immotors/Language'
+- Create a pull request, I will merge and publish it soon after checking for no issues
+
 ## Features
 
 -   Impostors don't know each other
@@ -12,15 +28,13 @@ Among us mod that fixes some game breaking bugs when tryharding among us. As wel
 
 ## Technical stuff
 
-This mod has been made using [Reactor modding framework](https://github.com/NuclearPowered/Reactor), based on BepInEx, it patches the game at runtime and **DOES NOT** modify any game files.
-
--   Support Among us v2020.12.9s (Steam only)
+-   Support Among us v2024.11.26 (Steam and Epic)
 
 ### Installation
 
 All players should have the mod install for the best user experience
 
--   Download the [lastest release](https://github.com/Herysia/AmongUsUnknownImpostors/releases/latest).
+-   Download the [lastest release](https://github.com/FangkuaiYa/AmongUs-HomemadePlugin/releases).
 -   Extract the files into Among us game folder (`steam/steamapps/common/Among us`)
 -   This should look like this
     ![looklikethis](./Visuals/looklikethis.png)
@@ -29,11 +43,10 @@ All players should have the mod install for the best user experience
 ### Installation side note
 
 If you want to install Reactor by yourself, please follow the [BepInEx](https://docs.reactor.gg/docs/basic/install_bepinex) installation instruction, then [Reactor](https://docs.reactor.gg/docs/basic/install_reactor)'s ones. And then copy the plugin dll (from [releases](https://github.com/Herysia/AmongUsTryhard/releases/latest)) into `Among us/BepInEx/plugins`
-If you want to play on official servers, you should then disable custom handshake option from: `Among us/BepInEx/config/gg.reactor.api.cfg`
 
 ### Uninstall
 
-If you want to uninstall this mod only, remove the dll `Among us/BepInEx/plugins/AmongUsUnknownImpostors-2020.12.9s.dll`.
+If you want to uninstall this mod only, remove the dll `Among us/BepInEx/plugins/AmongUsUnknownImpostors.dll`.
 
 If you want to disable it, you can temporarily rename or remove the file `Among us/winhttp.dll`
 
@@ -49,15 +62,12 @@ If you want to completely uninstall Reactor/BepInEx, remove the following files 
 
 # Contributing
 
-You have encountered a bug or unexpected behaviour ? You want to suggest or add a new feature ? Create an [Issue](https://github.com/Herysia/AmongUsUnknownImpostors/issues) or [PR](https://github.com/Herysia/AmongUsUnknownImpostors/pulls) !
-
-### Dependency
-
-This mod depends on [another module](https://github.com/Herysia/CustomLobbyOptions) which simplify lobby options (add to menu, sync settings and save settings individually with customisable display)
+You have encountered a bug or unexpected behaviour ? You want to suggest or add a new feature ? Create an [Issue](https://github.com/FangkuaiYa/AmongUs-HomemadePlugin/issues) or [PR](https://github.com/FangkuaiYa/AmongUs-HomemadePlugin/pulls) !
 
 ### Creating PR
 
--   [Fork this on github](https://github.com/Herysia/AmongUsUnknownImpostors/fork)
+-   [Fork this on github](https://github.com/FangkuaiYa/AmongUs-HomemadePlugin/fork)
+-   Deselect Copy the 'main' branch only
 -   Clone your repo, commit and push your changes
 -   Request a new Pull request
 
@@ -65,15 +75,14 @@ This mod depends on [another module](https://github.com/Herysia/CustomLobbyOptio
 
 AmongUsUnknownImpostors is licensed under the MIT License. See [LICENSE](LICENSE.md) for the full License.
 
-Credits to [@Galster](https://github.com/Galster-dev) for custom lobby settings
+Custom game option code reference [Town-Of-Us-R](https://github.com/eDonnes124/Town-Of-Us-R)
 
 Third-party libraries:
 
 -   [Reactor](https://github.com/NuclearPowered/Reactor) is license under the LGPL v3.0 License. See [LICENSE](https://github.com/NuclearPowered/Reactor/blob/master/LICENSE) for the full License.
--   [BepInEx (Reactor fork)](https://github.com/NuclearPowered/BepInEx) is licensed under the LGPL 2.1 License. See [LICENSE](https://github.com/NuclearPowered/BepInEx/blob/master/LICENSE) for the full License.
 -   Unity Runtime libraries are part of Unity Software.  
     Their usage is subject to [Unity Terms of Service](https://unity3d.com/legal/terms-of-service), including [Unity Software Additional Terms](https://unity3d.com/legal/terms-of-service/software).
 
 # Contact
 
-### Discord: Herysia#4293
+### Email: 2683748223@qq.com
