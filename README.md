@@ -2,12 +2,12 @@
 
 Among us mod that fixes some game breaking bugs when tryharding among us. As well as some useful settings
 
-## Langauges
+## 语言
 
 ### Add private language
 
 - Create a folder named 'Language' in the game directory
-- Download [Lang.dat](./AmongUsUnknownImpostors/Language/Lang.dat)
+- 下载 [Lang.dat](./AmongUsUnknownImpostors/Language/Lang.dat)
 - Open 'Lang. dat' using Notepad and translate it
 - Change the name of 'Lang. dat' to the corresponding language name
 
